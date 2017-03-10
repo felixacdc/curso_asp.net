@@ -11,7 +11,7 @@
 </head>
 <body class="bg-black">
     <div class="form-box" id="login-box">
-        <div class="header">Iniciar Sesion</div>
+        <div class="header">Login</div>
         <form id="form1" runat="server">
             <div class="body bg-gray">
                 <div class="form-group">
@@ -22,7 +22,7 @@
                 </div>
             </div>
             <div class="footer">
-                <asp:Button ID="btnIngresar" runat="server" CssClass="btn bg-olive btn-block" Text="Iniciar Sesion" />
+                <asp:Button ID="btnIngresar" runat="server" CssClass="btn bg-olive btn-block" Text="Iniciar Sesion" OnClick="btnIngresar_Click" />
             </div>
         </form>
     </div>
