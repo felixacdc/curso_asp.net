@@ -6,7 +6,7 @@
 <head runat="server">
     <title>Acceso al sistema de clinica</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
-    <script src="https://use.fontawesome.com/ff0a1ed881.js"></script>
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="css/AdminLTE.css" rel="stylesheet" />
 </head>
 <body class="bg-black">
