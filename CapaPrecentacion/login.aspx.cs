@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using CapaEntidades;
+using CapaLogicaNegocio;
 
 namespace CapaPrecentacion
 {
@@ -16,17 +18,14 @@ namespace CapaPrecentacion
 
         protected void btnIngresar_Click(object sender, EventArgs e)
         {
-            string user = txtUsuario.Text;
-            string password = txtPassword.Text;
-            string userName = "Felix";
-            string passName = "12345";
+            Empleado objEmpleado = EmpleadoLN.getInstance().AccesoSistema(txtUsuario.Text, txtPassword.Text);
 
-            if(user.Equals(userName) && password.Equals(passName))
+            if(objEmpleado != null)
             {
-                Response.Write("<script>alert('Usuario correcto')</script>");
+                Response.Write("<script>alert('Usuario Correcto')</script>");
             } else
             {
-                Response.Write("<script>alert('Usuario incorrecto')</script>");
+                Response.Write("<script>alert('Usuario Incorrecto')</script>");
             }
         }
     }

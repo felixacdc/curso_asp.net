@@ -30,7 +30,7 @@ namespace CapaAccesoDatos
         public SqlConnection conexionBD()
         {
             SqlConnection conexion = new SqlConnection();
-            conexion.ConnectionString = "Data Source=1CAE-GUA-PC152\\SQLEXPRESS;Initial Catalog=DBClinica_test; User Id=; Password=";
+            conexion.ConnectionString = "Data Source=1CAE-GUA-PC152\\SQLEXPRESS;Initial Catalog=DBClinica_test; Integrated Security = True";
             return conexion;
         }
     }

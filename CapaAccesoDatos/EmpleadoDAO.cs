@@ -9,7 +9,7 @@ using System.Data;
 
 namespace CapaAccesoDatos
 {
-    class EmpleadoDAO
+    public class EmpleadoDAO
     {
         #region "PATRON SINGLETON"
         private static EmpleadoDAO daoEmpleado = null;
@@ -39,19 +39,27 @@ namespace CapaAccesoDatos
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@prmUser", Usuario);
                 cmd.Parameters.AddWithValue("@prmPass", Password);
+                conexion.Open();
+
                 dr = cmd.ExecuteReader();
 
                 if (dr.Read())
                 {
-
+                    objEmpleado = new Empleado();
+                    objEmpleado.ID = Convert.ToInt32(dr["idEmpleado"].ToString());
+                    objEmpleado.Usuario = dr["usuario"].ToString();
+                    objEmpleado.Clave = dr["clave"].ToString();
                 }
-            } catch (Exception e)
+            } catch (Exception ex)
             {
-
+                objEmpleado = null;
+                throw ex;
             } finally
             {
-
+                conexion.Close();
             }
+
+            return objEmpleado;
         }
     }
 }

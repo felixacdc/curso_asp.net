@@ -1,0 +1,7 @@
+C:\Users\3plgtpabloma\Documents\Visual Studio 2015\Projects\CapaPrecentacion\CapaAccesoDatos\bin\Debug\CapaAccesoDatos.dll
+C:\Users\3plgtpabloma\Documents\Visual Studio 2015\Projects\CapaPrecentacion\CapaAccesoDatos\bin\Debug\CapaAccesoDatos.pdb
+C:\Users\3plgtpabloma\Documents\Visual Studio 2015\Projects\CapaPrecentacion\CapaAccesoDatos\bin\Debug\CapaEntidades.dll
+C:\Users\3plgtpabloma\Documents\Visual Studio 2015\Projects\CapaPrecentacion\CapaAccesoDatos\bin\Debug\CapaEntidades.pdb
+C:\Users\3plgtpabloma\Documents\Visual Studio 2015\Projects\CapaPrecentacion\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.csprojResolveAssemblyReference.cache
+C:\Users\3plgtpabloma\Documents\Visual Studio 2015\Projects\CapaPrecentacion\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.dll
+C:\Users\3plgtpabloma\Documents\Visual Studio 2015\Projects\CapaPrecentacion\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.pdb
