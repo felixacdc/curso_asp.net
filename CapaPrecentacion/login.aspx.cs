@@ -23,6 +23,7 @@ namespace CapaPrecentacion
             if(objEmpleado != null)
             {
                 Response.Write("<script>alert('Usuario Correcto')</script>");
+                Response.Redirect("PanelGeneral.aspx");
             } else
             {
                 Response.Write("<script>alert('Usuario Incorrecto')</script>");
