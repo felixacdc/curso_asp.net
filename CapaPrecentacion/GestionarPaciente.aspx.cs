@@ -21,6 +21,7 @@ namespace CapaPrecentacion
         private void GetValues()
         {
             Paciente objPaciente = new Paciente();
+            objPaciente.IdPaciente = 0;
         }
 
         private Paciente GetPaciente()
