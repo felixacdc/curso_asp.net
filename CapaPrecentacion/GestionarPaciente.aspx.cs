@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaEntidades;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,20 @@ namespace CapaPrecentacion
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!Page.IsPostBack)
+            {
 
+            }
+        }
+
+        private void GetValues()
+        {
+            Paciente objPaciente = new Paciente();
+        }
+
+        private Paciente GetPaciente()
+        {
+            return null;
         }
     }
 }
